@@ -2,6 +2,7 @@
   "name": "discordwebhookr",
   "version": "1.0.0",
   "description": "a discord webhook controlling panel",
+  "homepage": "https://qwertyr0.github.io/DiscordWebhookr/",
   "main": "./bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
