@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="DiscordWebhookr" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="A Discord Webhook Controller" />
+    <meta name="theme-color" content="#01F3">
+
+    <title>DiscordWebhookr</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">DiscordWebhookr</span>
+        </div>
+    </nav>
+    <center>
+    <div class="formr">
+    <form novalidate>
+        <legend>DiscordWebhookr Panel</legend>
+
+        <div class="mb-3">
+          <label for="webhookName" class="form-label">Name of the webhook</label>
+          <input type="text" class="form-control" id="webhookName" aria-describedby="name here" novalidate>
+          <span id="passwordHelpInline" class="form-text">
+            Maximum 80 characters long.
+          </span>
+        </div>
+        <div class="mb-3">
+          <label for="webhookAvatar" class="form-label">Avatar of the webhook</label>
+          <input type="url" class="form-control" id="avatarurl" novalidate>
+        </div>
+        <div>
+        <div class="mb-3">
+            <label for="webhookContent" class="form-label">Message to send</label>
+            <input type="url" class="form-control" id="webhookMessage" novalidate>
+          </div>
+        <div>
+        <label for="webhookID-t" class="form-label">WebhookURL</label>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="webhookID-t">https://discord.com/api/webhooks/</span>
+            <input type="text" class="form-control" id="webhookID" aria-describedby="id of the webhook" novalidate>
+          </div>
+        </div>
+        <button id="submitb" type="button" class="btn btn-primary" novalidate>Post!</button>
+      </form>
+    </div>
+    <br/><br/><br/>
+    <h2 class="text-info">If you found a bug please create an issue.<br />My Discord: Qwerty.R#9850</h2>
+</center>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./bundle.js" charset="utf-8"></script>
+
+</body>
+</html>
