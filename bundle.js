@@ -2083,9 +2083,10 @@ process.umask = function() { return 0; };
 },{}],32:[function(require,module,exports){
 const axios = require("axios")
 var button = document.getElementById('submitb');
+var id = document.getElementById("webhookID");
 
 function clickedS(){
-    const url = `https://discord.com/api/webhooks/${document.getElementById("webhookID").value}`
+    const url = `https://discord.com/api/webhooks/${id.value}`
     const name = document.getElementById("webhookName").value
     const avatar = document.getElementById("avatarurl").value
     const content = document.getElementById("webhookMessage").value
@@ -2099,4 +2100,13 @@ function clickedS(){
 }
 
 button.addEventListener("click", clickedS);
+id.onpaste = pasted;
+
+function pasted(){
+    setTimeout(()=> {
+        if(id.value.startsWith("https://discord.com/api/webhooks/")){
+            id.value = id.value.replace("https://discord.com/api/webhooks/", "");
+        }
+    }, 5);
+}
 },{"axios":1}]},{},[32]);
